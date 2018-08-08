@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mode1.component.css']
 })
 export class Mode1Component implements OnInit {
-
+  clickMessage:string;
+  onClickMe(dataIn:string){
+    this.clickMessage= dataIn;
+  }
   constructor() { }
 
   ngOnInit() {
   }
+
 
 }
