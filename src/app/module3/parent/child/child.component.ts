@@ -6,14 +6,10 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent implements OnInit {
-  @Input() childMessage: string;
-  muk:string;
+  @Input() childMessage:string;
   constructor() { }
 
   ngOnInit() {
-  }
-  myfunk(childMessage:string){
-    this.muk+=childMessage;
   }
 
 }
